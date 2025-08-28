@@ -1,4 +1,4 @@
-#N canvas 464 96 1351 1008 12;
+#N canvas 377 39 1351 1008 12;
 #X msg 197 27 \; dupa obj 130 107 tgl 19 0 recc sendd lab 0 -10 0 12 #fcfcfc #000000 #000000 0 1 \;;
 #X obj 511 611 pack f f \$0;
 #X obj 641 27 namecanvas patchbay-matrix-\$0;
@@ -91,7 +91,7 @@
 #X obj 717 446 t l b b;
 #X obj 717 203 t f f f;
 #X obj 748 337 t f f;
-#N canvas 138 230 193 255 get-current-gain 1;
+#N canvas 138 230 193 255 get-current-gain 0;
 #X obj 37 37 inlet;
 #X obj 37 132 text get matrix-\$1;
 #X obj 37 88 t b f;

@@ -141,7 +141,7 @@
 #X msg 60 200 inputs;
 #X msg 115 200 outputs;
 #X obj 60 66 patchbay.matrix \$0;
-#N canvas 121 159 387 246 in-out-INFO 1;
+#N canvas 121 159 387 246 in-out-INFO 0;
 #X text 20 126 OUTPUTS \; vco 1 2 \; vcf \; vca \; lfo \; env \;;
 #X text 20 16 INPUTS \; VCO f1 f2 \; VCF in cut \; VCA in lv \; OUT \; LFO fq lv \;;
 #X text 106 30 — oscillators' frequency \; — filter input and cutoff frequency \; — mixer input and level \; — output to dca~. \; — lfo's frequency & level.;
