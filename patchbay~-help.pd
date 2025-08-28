@@ -1,0 +1,11 @@
+#N struct logo-template-1544 float color float x1 float x2 float y1 float y2;
+#N struct frame-template-1544 float w float h;
+#N struct logo-template-1545 float color float x1 float x2 float y1 float y2;
+#N struct frame-template-1545 float w float h;
+#N canvas 491 57 605 748 12;
+#X obj 2 644 arturjd;
+#A saved width 600 \; height 100 \; cnv_width 5 \; log_base 20 \; x_log_start 1 \; x_log_end 5 \; func_height 80 \; waviness 1.333 \; flip_h 1 \; flip_v 1 \; flip_90 0 \; color_hue 100 \; color_saturation 0.9 \; color_lightness_factor 0.667 \; color_lightness_offset 0.1 \; loading_time 300 \; loading_delay 100 \;;
+#X obj 3 3 arturjd;
+#A saved width 600 \; height 100 \; cnv_width 5 \; log_base 20 \; x_log_start 1 \; x_log_end 5 \; func_height 80 \; waviness 1.333 \; flip_h 0 \; flip_v 0 \; flip_90 0 \; color_hue 100 \; color_saturation 0.9 \; color_lightness_factor 0.667 \; color_lightness_offset 0.1 \; loading_time 300 \; loading_delay 100 \;;
+#X obj 15 14 cnv 19 76 27 empty empty empty 20 12 0 12 #ffffff #404040 0;
+#X obj 19 18 patchbay~;

@@ -1,0 +1,7 @@
+#N canvas 837 343 366 177 12;
+#X obj 29 42 inlet~;
+#X text 27 10 Creation: [patchbay.in~ patchbay-id input-id];
+#X obj 68 91 send~ \$2-patchbay-\$1;
+#X obj 31 128 outlet~;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
