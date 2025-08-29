@@ -1,4 +1,4 @@
-#N canvas 671 132 1057 812 12;
+#N canvas 599 185 1057 812 12;
 #X text 113 41 cut;
 #X obj 43 377 r~ PITCH-\$0;
 #X obj 43 732 dac~;
@@ -138,8 +138,6 @@
 #X obj 60 233 patchbay~ \$0;
 #A saved inputs VCO f1 f2 \; VCF in cut \; VCA in lv \; OUT \; LFO fq lv \;;
 #A saved outputs vco 1 2 \; vcf \; vca \; lfo \; env \;;
-#X msg 60 200 inputs;
-#X msg 115 200 outputs;
 #X obj 60 66 patchbay.matrix \$0;
 #N canvas 121 159 387 246 in-out-INFO 0;
 #X text 20 126 OUTPUTS \; vco 1 2 \; vcf \; vca \; lfo \; env \;;
@@ -185,6 +183,8 @@
 #X restore 542 269 pd KEYBOARD;
 #X obj 542 293 s~ PITCH-\$0;
 #X text 411 275 Play using keys \; 1 2 3 4 5 6 7 8 9;
+#X msg 60 200 sources;
+#X msg 126 200 destinations;
 #X connect 1 0 21 0;
 #X connect 1 0 39 0;
 #X connect 20 0 2 0;
@@ -200,6 +200,6 @@
 #X connect 36 0 35 0;
 #X connect 37 0 24 1;
 #X connect 39 0 22 0;
-#X connect 41 0 40 0;
-#X connect 42 0 40 0;
-#X connect 45 0 46 0;
+#X connect 43 0 44 0;
+#X connect 46 0 40 0;
+#X connect 47 0 40 0;
