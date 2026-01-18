@@ -1,0 +1,4 @@
+#N canvas 558 572 450 300 12;
+#X obj 133 60 patchbay~ se-\$02;
+#A saved inputs VCO f1 f2 \; VCF in cut \; VCA in lv \; OUT \; LFO fq lv \;;
+#A saved outputs vco 1 2 \; vcf \; vca \; lfo \; env \;;
