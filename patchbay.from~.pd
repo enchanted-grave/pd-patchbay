@@ -1,4 +1,4 @@
-#N canvas 476 374 451 377 12;
+#N canvas 35 228 814 428 12;
 #X obj 21 332 outlet~;
 #X obj 23 31 inlet~;
 #X text 21 8 Creation: [patchbay.out~ patchbay-id output-id];
@@ -13,6 +13,12 @@
 #X obj 113 139 symbol \$2-patchbay-\$1;
 #X obj 77 108 sel 1 0;
 #X text 234 85 See: _connection_default~.pd;
+#X obj 590 38 inlet~;
+#X obj 594 298 outlet~;
+#X obj 481 306 patchbay;
+#A saved inputs VCO f1 f2 \; VCF in cut \; VCA in lv \; OUT \; LFO fq lv \;;
+#A saved outputs vco 1 2 \; vcf \; vca \; lfo \; env \;;
+#X obj 524 185 clone _send-to 1 \$1;
 #X connect 1 0 8 0;
 #X connect 3 0 0 0;
 #X connect 7 0 12 0;

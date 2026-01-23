@@ -1,0 +1,18 @@
+#N canvas 1045 629 645 300 12;
+#X obj 28 185 outlet~;
+#X obj 27 75 inlet~;
+#X obj 69 140 send~ patchbay-\$1.sources.\$2;
+#X obj 396 12 loadbang;
+#X obj 396 36 symbol \$2;
+#X text 472 37 TO DO: handle number!;
+#X obj 396 60 s pb-\$0.source.new;
+#X obj 398 142 symbol \$2;
+#X text 474 143 TO DO: handle number!;
+#X obj 398 118 r pb-\$0.source.touch;
+#X obj 398 166 s pb-\$0.source.report;
+#X connect 1 0 0 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 7 0 10 0;
+#X connect 9 0 7 0;

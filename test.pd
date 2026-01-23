@@ -1,8 +1,9 @@
 #N canvas 817 38 909 1008 12;
-#X obj 83 124 patchbay~ \$0;
-#A saved inputs;
-#A saved outputs;
 #X msg 48 54 sources;
 #X msg 76 77 destinations;
-#X connect 1 0 0 0;
-#X connect 2 0 0 0;
+#X obj 83 124 patchbay \$0;
+#A saved inputs VCO f1 f2 \; VCF in cut \; VCA in lv \; OUT \; LFO fq lv \;;
+#A saved outputs vco 1 2 \; vcf \; vca \; lfo \; env \;;
+#X obj 139 193 patchbay.from~ \$0 x;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;
