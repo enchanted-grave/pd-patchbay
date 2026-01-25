@@ -1,0 +1,12 @@
+#N canvas 117 540 635 365 12;
+#X obj 30 181 outlet~;
+#X obj 320 84 loadbang;
+#X obj 302 152 symbol \$2;
+#X text 378 153 TO DO: handle number!;
+#X obj 302 176 s pb\$1.destination.new;
+#X obj 30 122 catch~ pb\$1.destinations.\$2;
+#X obj 303 59 r pb\$1.destinations.rescan;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 5 0 0 0;
+#X connect 6 0 2 0;
