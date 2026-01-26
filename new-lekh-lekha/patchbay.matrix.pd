@@ -1,4 +1,4 @@
-#N canvas 539 38 1408 1009 12;
+#N canvas 320 38 1408 1009 12;
 #N struct button float color float x1 float y1 float x2 float y2;
 #X obj 673 40 namecanvas matrix-\$0;
 #X obj 401 260 pack f f;
@@ -128,7 +128,7 @@
 #X obj 27 27 struct label;
 #X restore 825 328 pd label;
 #X obj 401 284 t l l l;
-#N canvas 112 418 567 300 resize-attenuverter 1;
+#N canvas 112 418 567 300 resize-attenuverter 0;
 #X obj 36 19 inlet;
 #X obj 36 104 pack f f, f 33;
 #X msg 36 172 size \$2 \$1;
@@ -168,6 +168,10 @@
 #X obj 700 134 s mode-\$0;
 #X msg 700 110 0;
 #X msg 658 111 1;
+#X obj 562 40 loadbang;
+#X obj 562 64 t b b;
+#X obj 392 98 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X msg 364 820 scalar button 650 \$1 \$2 \$3 \$4;
 #N canvas 981 80 587 487 matrix-gui-\$0 0;
 #X scalar button 650 20 20 40 40 \;;
 #X scalar button 650 40 20 60 40 \;;
@@ -179,11 +183,7 @@
 #X scalar button 650 40 80 60 100 \;;
 #X coords 0 0 60 100 60 100 2 0 0;
 #X restore 10 10 pd matrix-gui-\$0;
-#X obj 562 40 loadbang;
-#X obj 562 64 t b b;
-#X obj 392 98 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
-#X msg 364 820 scalar button 650 \$1 \$2 \$3 \$4;
-#X obj 10 12 vsl 60 95 -1 1 0 0 from-attenuverter-\$0 to-attenuverter-\$0 empty 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 10 12 vsl 60 95 -1 1 0 0 from-attenuverter-\$0 to-attenuverter-\$0 empty 0 -9 0 12 #ffffff #ffffff #000000 0 1;
 #X connect 1 0 29 0;
 #X connect 2 0 1 0;
 #X connect 3 0 1 1;
@@ -206,7 +206,7 @@
 #X connect 19 0 25 0;
 #X connect 20 0 26 1;
 #X connect 20 1 26 2;
-#X connect 21 0 39 0;
+#X connect 21 0 38 0;
 #X connect 22 0 23 0;
 #X connect 22 0 24 0;
 #X connect 25 0 21 0;
@@ -220,11 +220,11 @@
 #X connect 29 2 30 0;
 #X connect 33 0 32 0;
 #X connect 34 0 32 0;
-#X connect 36 0 37 0;
+#X connect 35 0 36 0;
+#X connect 36 0 6 0;
+#X connect 36 1 33 0;
+#X connect 36 1 4 0;
+#X connect 36 1 22 0;
 #X connect 37 0 6 0;
-#X connect 37 1 33 0;
-#X connect 37 1 4 0;
-#X connect 37 1 22 0;
-#X connect 38 0 6 0;
-#X connect 39 0 10 0;
+#X connect 38 0 10 0;
 #X coords 0 -1 1 1 60 100 2 10 10;

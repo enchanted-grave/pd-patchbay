@@ -1,5 +1,4 @@
 #N canvas 618 517 945 403 12;
-#N struct button float color float x1 float y1 float x2 float y2;
 #X obj 28 238 patchbay \$0;
 #A saved inputs from \; from2 \;;
 #A saved outputs in \; in2 \; in3 \; in4 \;;
@@ -40,7 +39,6 @@
 #X obj 752 35 osc~ 555;
 #X obj 753 59 patchbay.to~ \$0 in4;
 #X msg 211 239 clear;
-#X obj 550 203 patchbay.matrix \$0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
 #X connect 3 0 4 0;
