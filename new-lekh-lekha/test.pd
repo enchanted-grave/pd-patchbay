@@ -38,13 +38,15 @@
 #X msg 133 236 rescan;
 #X obj 752 35 osc~ 555;
 #X obj 753 59 patchbay.to~ \$0 in4;
-#X msg 211 239 clear;
+#X msg 193 236 clear;
 #X obj 397 12 sig~ 333;
 #X obj 397 101 osc~;
 #X obj 485 54 *~;
 #X obj 397 61 +~;
 #X obj 487 25 sig~ 100;
-#X obj 520 262 patchbay.matrix \$0;
+#X obj 694 283 patchbay.matrix \$0;
+#X obj 586 222 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X text 609 224 Bang redraws matrix.;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
 #X connect 3 0 4 0;
@@ -81,3 +83,4 @@
 #X connect 39 0 40 1;
 #X connect 40 0 38 0;
 #X connect 41 0 39 0;
+#X connect 43 0 42 0;
