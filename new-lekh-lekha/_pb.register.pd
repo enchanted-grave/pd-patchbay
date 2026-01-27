@@ -13,7 +13,8 @@
 #X obj 95 167 symbol;
 #X obj 25 431 outlet;
 #X obj 118 384 s pb\$1._\$2.update;
-#X text 30 20 \$1 – patchbay name \; \$2 – "sources" or "destinations" \;;
+#X text 77 431 node allocation id.;
+#X text 30 20 \$1 – patchbay name \; \$2 – node ("sources" or "destinations") \;;
 #X connect 0 0 13 0;
 #X connect 2 0 9 0;
 #X connect 3 0 8 0;
