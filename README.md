@@ -17,6 +17,9 @@ While other existing tools definitely offer a signal routing matrices (like `iem
 `[patchbay~]` started as an architecture for _semimodular_ setups, where default signal flow is already defined
 but with additional possibility of further routing.
 
+<img width="617" height="257" alt="modular" src="examples/modular.png"  />
+
+
 > [!NOTE]  
 > If you know of other projects using the concept of patchbays (or your created one yourself), please let me know!
 > I would be very happy on creating a small article about existing solutions for patchbay workflows in Pure Data
@@ -43,11 +46,22 @@ Because they introduce some delay to the signal, you can safely create feedback 
 
 ### Including `[patchbay~]` in your existing project
 
-I desinged `[patchbay~]` to be easily implemented in your existing project.
-All you need to do is:
+I desinged `[patchbay~]` to be easily implemented in your existing project. Let's say your project looks like this:
+
+<img width="506" height="271" alt="simple-fm-synth-0" src="examples/simple-fm-synth-0.png" />
+
+The easiest way to add a patchbay workflow is to:
 1) create and name a `[patchbay~]` object,
 2) "inject" the `[patchbay.to~]` into your signal chain,
-3) think carefully where to put the `[patchbay.from~]` receivers to make most out of your enhanced project (see below)!
+3) add one `[patchbay.from~]` at the end of your signal chain (we want at least one output,
+4) create a `[patchbay.matrix]` to check if everything works correctly,
+
+<img width="506" height="271" alt="simple-fm-synth-1" src="examples/simple-fm-synth-1.png" />
+ 
+5) think carefully where to put the `[patchbay.from~]` receivers to make most out of your enhanced project (see below)!
+6) re-create the `[patchbay.matrix]` to update its GUI, check if everything work as expected and start patch`[bay]`ing!
+
+<img width="506" height="271" alt="simple-fm-synth-1" src="examples/simple-fm-synth-2.png" />
 
 > [!TIP]  
 > Let's be honest: nothing is more straightforward that patching objects directly.
@@ -65,6 +79,7 @@ and give the user more control to the `[patchbay.matrix]` display.
 
 Planned updates to `[patchbay.matrix]` object:
 - sync with updates to `[patchbay~]` (DONE),
+- update GUI dynamically when adding or removing `[patchbay~]` nodes (DONE),
 - display default connections (WIP),
 - display partial gains as fading green color (DONE),
 - attenuverter functionality (dragging mouse like a `[vslider]` will cause continuous gain change) (DONE),
@@ -77,4 +92,13 @@ Planned updates to `[patchbay~]` object:
 - retaining correct patch gains while removing or adding new nodes (WIP).
 - modulate connection gain using signal (WIP).
 
+> [!WARNING]  
+> Multichannel support is not yet implemented.
+
 One more thing is to add an alias `[pb~]` if one prefers brevity over clarity, your pure data weirdoos.
+
+Also, planning more objects! But not too much not to keep it too bloated. It should be a simple library!
+They should deal with:
+- feedback or self-modulation,
+- connection's gain modulation using signal,
+- purely control messages.
