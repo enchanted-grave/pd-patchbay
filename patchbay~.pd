@@ -1,4 +1,4 @@
-#N canvas 248 163 1126 748 12;
+#N canvas 802 168 1126 748 12;
 #X obj 30 15 inlet;
 #N canvas 92 130 340 280 guard-connection-msg 0;
 #X obj 41 18 inlet;
@@ -204,7 +204,7 @@
 #X obj 115 172 list prepend;
 #X obj 115 253 outlet;
 #X obj 62 19 inlet;
-#X msg 115 195 symbol \$1:\$2;
+#X msg 115 195 symbol \$1.\$2;
 #X connect 0 0 2 0;
 #X connect 0 1 1 1;
 #X connect 1 0 0 0;
@@ -242,7 +242,7 @@
 #X restore 103 179 pd get-dest-names;
 #N canvas 757 479 299 332 get-sources-names 0;
 #X obj 51 172 route symbol;
-#N canvas 80 531 243 282 drip-groups 0;
+#N canvas 80 531 243 282 drip-groups 1;
 #X obj 25 86 list split 1;
 #X obj 40 108 list;
 #X obj 25 130 t b a b;
@@ -252,7 +252,7 @@
 #X obj 115 172 list prepend;
 #X obj 115 253 outlet;
 #X obj 62 19 inlet;
-#X msg 115 195 symbol \$1:\$2;
+#X msg 115 195 symbol \$1.\$2;
 #X connect 0 0 2 0;
 #X connect 0 1 1 1;
 #X connect 1 0 0 0;
