@@ -10,16 +10,14 @@
 #X obj 110 82 patchbay.from~ feedback-\$2 fm:\$1;
 #X obj 133 126 patchbay.from~ feedback-\$2 am:\$1;
 #X obj 60 261 patchbay.to~ feedback-\$2 osc:\$1;
-#X obj 58 76 print;
 #X obj 22 61 * 200;
 #X connect 0 0 10 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
-#X connect 4 0 11 0;
 #X connect 5 0 0 0;
 #X connect 6 0 8 0;
-#X connect 7 0 12 0;
+#X connect 7 0 11 0;
 #X connect 8 0 5 1;
 #X connect 9 0 2 1;
 #X connect 10 0 1 0;
-#X connect 12 0 4 0;
+#X connect 11 0 4 0;
