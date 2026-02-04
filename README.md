@@ -1,4 +1,4 @@
-# pd-patchbay
+# pd-patchbay [alpha]
 
 > [!IMPORTANT]  
 > This is a prototype version of the `[patchbay~]` Pure Data library.
